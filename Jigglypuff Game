@@ -9,14 +9,14 @@ switch(user){
 			if(strong === 'yes'){strong = true;}
 			else{strong = false;}
     		if(smart && strong){
-        		var pet = prompt("Fool! Jigglypuff is not a toy, its a magestic being from above! It will forgive you however if you will listen to its song", "Listen to the beautiful song? or rudly walk away?").toLowerCase();
+        		var pet = prompt("Fool! Jigglypuff is not a toy, its a majestic being from above! It will forgive you however if you will listen to its song", "Listen to the beautiful song? or rudely walk away?").toLowerCase();
         		switch(pet){
             		case 'listen':
-            		alert("You fell asleep to the molodic tones of the one true Jiggly, IDIOT JIGGLYPUFF HATES WHEN YOU FALL ASLEEP WHEN ITS SINGING!! It takes its microphone and beats you to death");
+            		alert("You fell asleep to the melodic tones of the one true Jiggly, IDIOT JIGGLYPUFF HATES WHEN YOU FALL ASLEEP WHEN ITS SINGING!! It takes its microphone and beats you to death");
             		break;
             		
             		case'walk away':
-            		alert("You're not getting away that easily! Jigglypuff has you as its prisoner, it begins to sing as you walk away and you find yourself drifting into sleep. You awaken in a dark cave covered in human bones and realise that you will die here among the other non-believers. Good bye");
+            		alert("You're not getting away that easily! Jigglypuff has you as its prisoner, it begins to sing as you walk away and you find yourself drifting into sleep. You awaken in a dark cave covered in human bones and realize that you will die here among the other non-believers. Goodbye");
             		break;
             		
             		default: alert("That is no longer an option, you've gone too far");
@@ -24,14 +24,14 @@ switch(user){
         		}
 			}
         	else if(smart || strong){
-            	var dumb = prompt("If you arn't smart AND strong you'll never hope to pet a Jigglypuff. It will forgive for your stupidity and weakness however if you will listen to its song", "Listen to the beautiful song? or rudly walk away?").toLowerCase();
+            	var dumb = prompt("If you aren’t smart AND strong you'll never hope to pet a Jigglypuff. It will forgive for your stupidity and weakness however if you will listen to its song", "Listen to the beautiful song? or rudely walk away?").toLowerCase();
         		switch(dumb){
             		case 'listen':
-            		alert("You fell asleep to the molodic tones of the one true Jiggly, IDIOT JIGGLYPUFF HATES WHEN YOU FALL ASLEEP WHEN ITS SINGING!! It takes its microphone and beats you to death");
+            		alert("You fell asleep to the melodic tones of the one true Jiggly, IDIOT JIGGLYPUFF HATES WHEN YOU FALL ASLEEP WHEN ITS SINGING!! It takes its microphone and beats you to death");
             		break;
             		
             		case 'walk away':
-            		alert("You're not getting away that easily! Jigglypuff has you as its prisoner, it begins to sing as you walk away and you find yourself drifting into sleep. You awaken in a dark cave covered in human bones and realise that you will die here among the other non-believers. Good bye");
+            		alert("You're not getting away that easily! Jigglypuff has you as its prisoner, it begins to sing as you walk away and you find yourself drifting into sleep. You awaken in a dark cave covered in human bones and realize that you will die here among the other non-believers. Goodbye");
             		break;
             		
             		default: alert("That is no longer an option, you've gone too far");
@@ -42,7 +42,7 @@ switch(user){
     		break;
 
     case'catch it':
-        var swipe = prompt("So you thought you could catch the beautiful being from beyond? Well shockingly *cough cough* you were wrong. Jigglypuff is far smarter and better and more good looking than you will ever be and you fail miserably lunging at Puff missing by at least 10 feet tut tut. Jigglypuff looks down at you with sadness in its eyes knowing you will never appreciate true beauty in this world, and walks away. You feeebly call after it, what do you say?" , "I love you puff? or I'll catch you one day puff!").toLowerCase();
+        var swipe = prompt("So you thought you could catch the beautiful being from beyond? Well shockingly *cough cough* you were wrong. Jigglypuff is far smarter and better and more good looking than you will ever be and you fail miserably lunging at Puff missing by at least 10 feet tut tut. Jigglypuff looks down at you with sadness in its eyes knowing you will never appreciate true beauty in this world, and walks away. You feebly call after it, what do you say?" , "I love you puff? or I'll catch you one day puff!").toLowerCase();
             switch(swipe){
             case 'i love you':
             alert("Jigglypuff pauses and turns slowly around, softly it whispers 'Go fuck yourself' and then it is gone.");
