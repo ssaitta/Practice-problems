@@ -6,7 +6,7 @@ var digit = (''+n);
 var lengthOfN = digit.length;
   for (i=0;i<str.length;i++){
       for(j=0; j<digit.length;j++){
-          indices[i] = letters.indexOf(str.charAt(i))+1; //make a=1 not a=0 
+          indices[i] = letters.indexOf(str.charAt(i))+1;
           shiftedLetters[i] = indices[i]+(Number(digit.charAt(i%lengthOfN))); //shift each leter by the next digit of n not the whole number.
       }
 
