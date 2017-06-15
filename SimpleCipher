@@ -4,11 +4,8 @@ var indices = [];
 n = String(n);
 var lengthOfN = n.length;
   for (i=0;i<str.length;i++){
-      for(j=0; j<n.length;j++){
           indices[i] = letters.indexOf(str.charAt(i))+1;
           indices[i] = indices[i]+(Number(n.charAt(i%lengthOfN)));
-      }
-
   }
   return indices;
 }
