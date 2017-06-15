@@ -1,13 +1,12 @@
 function encode(str,  n)
-{ var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+{ var letters = 'abcdefghijklmnopqrstuvwxyz';
  var indices = [];
- var shiftedLetters =[];
  var newString = [];
  var output = "";
   for (i=0;i<str.length;i++){
-    indices[i] = letters.indexOf(str.charAt(i))+1;
-    shiftedLetters[i] = indices[i]+(n%23);
-    var newLetter = shiftedLetters[i];
+    indices[i] = letters.indexOf(str.charAt(i));
+    indices[i] = (indices[i]+(n))%25;
+    var newLetter = indices[i];
     newString[i] = letters[newLetter];
     output = newString.join('');
   }
