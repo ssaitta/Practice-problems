@@ -1,15 +1,15 @@
 function encode(str,  n)
 { var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
- var indices = [];
- var shiftedLetters =[];
- var newString = [];
- var output = "";
+var indices = [];
+var shiftedLetters =[];
+var digit = (''+n);
+var lengthOfN = digit.length;
   for (i=0;i<str.length;i++){
-    indices[i] = letters.indexOf(str.charAt(i));
-    shiftedLetters[i] = indices[i]+(n%23);
-    var newLetter = shiftedLetters[i];
-    newString[i] = letters[newLetter];
-    output = newString.join('');
+      for(j=0; j<digit.length;j++){
+          indices[i] = letters.indexOf(str.charAt(i))+1; //make a=1 not a=0 
+          shiftedLetters[i] = indices[i]+(Number(digit.charAt(i%lengthOfN))); //shift each leter by the next digit of n not the whole number.
+      }
+
   }
-  return output;
+  return shiftedLetters; //return only the array of shifted indices not letters
 }
