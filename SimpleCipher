@@ -1,14 +1,14 @@
 function encode(str,  n)
 { var letters = 'abcdefghijklmnopqrstuvwxyz';
 var indices = [];
-var digit = (''+n);
-var lengthOfN = digit.length;
+n = String(n);
+var lengthOfN = n.length;
   for (i=0;i<str.length;i++){
-      for(j=0; j<digit.length;j++){
+      for(j=0; j<n.length;j++){
           indices[i] = letters.indexOf(str.charAt(i))+1;
-          indices[i] = indices[i]+(Number(digit.charAt(i%lengthOfN))); //shift each leter by the next digit of n not the whole number.
+          indices[i] = indices[i]+(Number(n.charAt(i%lengthOfN)));
       }
 
   }
-  return indices; //return only the array of shifted indices not letters
+  return indices;
 }
