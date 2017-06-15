@@ -5,7 +5,7 @@ function encode(str,  n)
  var newString = [];
  var output = "";
   for (i=0;i<str.length;i++){
-    indices[i] = letters.indexOf(str.charAt(i));
+    indices[i] = letters.indexOf(str.charAt(i))+1;
     shiftedLetters[i] = indices[i]+(n%23);
     var newLetter = shiftedLetters[i];
     newString[i] = letters[newLetter];
