@@ -1,3 +1,5 @@
+//Write a function that accepts str string and key number and returns a string representing encoded str.
+
 function encode(str,  n)
 { var letters = 'abcdefghijklmnopqrstuvwxyz';
  var indices = [];
