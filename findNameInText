@@ -1,7 +1,4 @@
-# Practice-problems
-My JS pratice Callenges
-
-/*jshint multistr:true */
+/*Write a function that searches text for a key word*/
 
 var text = "blah blah blah blah Sierra blah blah blah Sierra blah blah blah Sierra";
 
