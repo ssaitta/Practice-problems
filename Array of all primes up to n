@@ -1,3 +1,5 @@
+//Write a function which will return an array with all prime numbers smaller than or equal to an arbitrary parameter "n".
+
 function primeArray(n){
   var primeArray=[];
   var factors=[];
