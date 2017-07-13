@@ -1,3 +1,6 @@
+//Create a list of all numbers up to n, where every number divisable by 3 is replaceed with 'Fizz', and every
+//number dividable by 5 is replaced by 'Buzz'. If a number is divisable by both 3 and 5, replace it with 'FizzBuzz'
+
 var FizzBuzz = function (number)
 
 {
